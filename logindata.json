@@ -1,16 +1,16 @@
 
 [
 	{
-		"id" : "user1@test.com",
-		"password" : "pword1"
+		"id" : "a",
+		"password" : "pa"
 	},
 	{
-		"id": "user2@test.com",
-		"password": "pword2"
+		"id": "b",
+		"password": "pb"
 	},
 	{
-		"id": "user3@test.com",
-		"password": "pword3"
+		"id": "c",
+		"password": "pc"
 	}
 
 ]
