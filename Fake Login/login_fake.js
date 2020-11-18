@@ -11,8 +11,20 @@ var pWords = []
 //Keep in mind promises - a fetch returns a promise
 
 //Link to JSON file
-var url
+var url = "https://raw.githubusercontent.com/emanuel2022/epaduret.github.io/main/Fake%20Login/logindata.json"
 
+fetch(url, {})
+.then(response => response.json()) //Arrow function, Abstraction, easier way of writing functions
+.then(result => {
+    console.log(result)
+
+    for (i = 0; i < result.length; i++){
+        uNames.push(result[i]['id'])
+        pWords.push(result[i]['password'])
+
+        console.log(uNames,pWords)
+    }
+})
 
 // How do I check the login
 // Step 1: Grab the form
