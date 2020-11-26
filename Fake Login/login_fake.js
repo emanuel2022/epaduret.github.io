@@ -33,9 +33,10 @@ var mlogin = document.getElementById("modal-login")
 var loginForm = document.getElementById("login-form");
 var homePage = document.getElementById("home");
 var loginPage = document.getElementById("landing");
+var logOut = document.getElementById("btn");
 
 homePage.style.display = "none"
-
+logOut.style.display= "none"
 // Step 2: Bind an event listener
 
 loginForm.addEventListener("submit", function(e) {
@@ -55,7 +56,10 @@ loginForm.addEventListener("submit", function(e) {
 
         homePage.style.display = "block"
         loginPage.style.display = "none"
+        logOut.style.display  = "block"
+
     }
+    
     
 
 
@@ -66,6 +70,16 @@ loginForm.addEventListener("submit", function(e) {
     $(mlogin).modal("close")
 
 });
+
+logOut.addEventListener('click', function(){
+
+    logOut.style.display = "none"
+    homePage.style.display = "none"
+    loginPage.style.display= "block"
+    //location.reload()
+
+})
+
 
 
 
