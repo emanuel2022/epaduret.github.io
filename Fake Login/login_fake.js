@@ -26,6 +26,22 @@ fetch(url, {})
     }
 })
 
+function a(result){
+
+    console.log(result)
+
+    for (i = 0; i < result.length; i++){
+        uNames.push(result[i]['id'])
+        pWords.push(result[i]['password'])
+
+        console.log(uNames,pWords)
+    }
+
+}
+
+
+
+
 // How do I check the login
 // Step 1: Grab the form
 

@@ -10,11 +10,15 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-      <title>Photo Ninja</title>
+      <title>Emanuel Paduret</title>
 
       <style>
+
+          body{
+              background-color: #dce7f3;
+          }
           header{
-              background: url(img/man.jpg);
+              background: url(img/chess.jpg);
               background-size: cover;
               background-position: center;
               min-height: 1000px;
@@ -32,8 +36,18 @@
           @media screen and (max-width: 670px){
               header{
                   min-height: 500px;
-              }
-          }
+              }}
+
+        @font-face {
+            font-family: Stadium;
+            src: url(fonts/stadium.ttf);
+            
+            } 
+        
+        .brand-logo{
+            font-family: Stadium;
+        }
+          
       </style>
     </head>
     <body>
@@ -43,27 +57,28 @@
       <header>
         <nav class="nav wrapper transparent">
             <div class="container">
-                <a href="" class="brand-logo">Photo Ninja</a>
+                <a href="" class="brand-logo">Emanuel Paduret</a>
                 <a href="" class="sidenav-trigger" data-target = "mobile-menu">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#photos"> Photos</a></li>
+                    <li><a href="#chess"> Chess</a></li>
                     <li><a href="#services"> Services</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip = "Instagram">
-                        <i class="fab fa-instagram"></i>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small center-align darken-4" data-tooltip = "Lichess">
+                        <i class="fas fa-chess black"></i>
                     </a></li>
-                    <li><a href="#" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook">
-                        <i class="fab fa-facebook"></i>
+                    <li><a href="#" class="btn-floating btn-small white darken-4 tooltipped" data-tooltip="GoodReads">
+                        <i class="fas fa-book black"></i>
                     </a></li>
-                    <li><a href="#" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Twitter">
-                        <i class="fab fa-twitter"></i>
+                    <li><a href="#" class="btn-floating btn-small white darken-4 tooltipped" data-tooltip="Twitter">
+                        <i class="fab fa-twitter black"></i>
                     </a></li>
                 </ul>
                 <ul class="sidenav grey ligthen-2" id = "mobile-menu">
-                    <li><a href="#"> Photos</a></li>
-                    <li><a href="#"> Services</a></li>
+                    <li><a href="#"> Chess</a></li>
+                    <li><a href="#"> Books</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -72,40 +87,40 @@
     
       <!-- photo / grid -->
 
-      <section class="container section scrollspy" id="photos">
+      <section class="container section scrollspy" id="chess">
           <div class="row">
               <div class="col s12 l4">
-                  <img src="img/portrait.jpg" alt="" class ="responsive-img materialbox">
+                  <img src="img/Chess_Op/opening1.jpg" alt="" class ="responsive-img materialbox">
               </div>
               <div class="col s12 l6 offset-l1">
-                  <h2 class="indigo-text text-darken-4">Portraits</h2>
+                  <h2 class="indigo-text text-darken-4">Openings</h2>
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
               </div>
           </div>
           <div class="row">
             <div class="col s12 l4 push-l7 offset-l1">
-                <img src="img/city.jpg" alt="" class ="responsive-img materialbox">
+                <img src="img/Chess_Op/endgame1.jpg" alt="" class ="responsive-img materialbox">
             </div>
             <div class="col s12 l6 pull-l5 right-align offset-l1">
-                <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+                <h2 class="indigo-text text-darken-4">Endgames</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
             </div>
         </div>
         <div class="row">
             <div class="col s12 l4">
-                <img src="img/nature.jpg" alt="" class ="responsive-img materialbox">
+                <img src="img/Chess_Op/tactics1.jpg" alt="" class ="responsive-img materialbox">
             </div>
             <div class="col s12 l6 offset-l1">
-                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <h2 class="indigo-text text-darken-4">Tactics</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
             </div>
         </div>
       </section>
     
       <!-- parallax -->
-    <div class="parallax-container">
+    <div class="l3 parallax-container">
           <div class="parallax">
-              <img src="img/street.jpg" alt="" class="responsive-img">
+              <img src="img/chess2.jpg" alt="" class="responsive-img">
           </div>
       </div>
       
@@ -121,19 +136,19 @@
             <div class="col s12 l6 offset-l2">
                 <ul class="tabs">
                     <li class="tab col s6">
-                        <a href="#editing" class='indigo-text text-darken-4'>Editing</a>
+                        <a href="#editing" class='indigo-text text-darken-4'>Analysis</a>
                     </li>
                     <li class="tab col s6">
-                        <a href="#photography" class='indigo-text text-darken-4'>Photography</a>
+                        <a href="#photography" class='indigo-text text-darken-4'>Chess Lessons</a>
                     </li>
                 </ul>
                 <div class="col s12" id='photography'>
-                    <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                    <p class="flow-text indigo-text text-darken-4">CHESS LESSONS</p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
                 </div>
                 <div class="col s12" id='editing'>
-                    <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                    <p class="flow-text indigo-text text-darken-4">ANALYSIS</p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
                 </div>
@@ -144,10 +159,33 @@
       <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="img/stars.jpg" alt="" class="responsive-img">
+            <img src="img/carlsen1.jpg" alt="" class="responsive-img">
         </div>
     </div>
 
+
+    <!-- Carousel -->
+    <section class="section container scrollspy" id='books'>
+    <div class="row">
+        
+    <div class=" col s12 l5 carousel">
+        <h2 class="indigo-text text-darken-4 left ">Rec. Books </h2>
+        <a href="#one" class="carousel-item "><img src="img/Chess_Op/book2.jpg"></a>
+        <a href="#two" class="carousel-item "><img src="img/Chess_Op/book3.jpg"></a>
+        <a href="#three" class="carousel-item "><img src="img/Chess_Op/book4.jpg"></a>
+        <a href="#four" class="carousel-item " ><img src="img/Chess_Op/book5.jpg"></a>
+        <a href="#four" class="carousel-item " ><img src="img/Chess_Op/book6.jpg"></a>
+    </div>
+    <div class="col s12 L5 offset-l2 ">
+        <h2 class="indigo-text text-darken-4">Why? </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+             
+    </div>
+    </section>
+    
     
       <!-- contact form -->
 
@@ -180,13 +218,13 @@
                     <p>
                         <label>
                             <input type="checkbox">
-                            <span>Photography</span>
+                            <span>Analysis</span>
                         </label>
                     </p>
                     <p>
                         <label>
                             <input type="checkbox">
-                            <span>Editing</span>
+                            <span>Chess Lessons</span>
                         </label>
                     </p>
                 </div>
@@ -219,11 +257,11 @@
               </div>
           </div>
           <div class="footer-copyright grey darken-4">
-              <div class="container center align">&copy; 2020 Photo Ninja</div>
+              <div class="container center align">&copy; Emanuel Paduret 2020</div>
           </div>
       </footer>
     
-      <!-- Compiled and minified JavaScript -->
+      <!-- Compiled and minified JavaScript-->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
       <script>
@@ -239,6 +277,9 @@
             });
             $('.tooltipped').tooltip();
             $('.scrollspy').scrollSpy();
+            $('.carousel').carousel({
+                indicators: true
+            });
         });
         
       </script>
